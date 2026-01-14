@@ -29,3 +29,5 @@ La lista se muestra con LazyColumn, que solo renderiza los elementos visibles, m
 
 Cada ítem es clicable y navega a la pantalla de detalle correspondiente.
 
+Api usada:
+https://db.ygoprodeck.com/api/v7/cardinfo.php
