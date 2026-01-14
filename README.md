@@ -8,3 +8,24 @@ Una vez elegimos cualquiera de ellas, entramos en un detalle donde nos aparece e
 
 
 <img width="402" height="899" alt="image" src="https://github.com/user-attachments/assets/45b5020d-e31f-4e42-89ec-6929198e9b68" />
+
+
+
+Arquitectura
+
+La app sigue el patrón Model–View–ViewModel:
+
+  - Model: YuGiOhCard representa los datos de cada carta.
+
+  - ViewModel: CardListViewModel mantiene la lista de cartas usando LiveData y proporciona métodos de acceso a los datos.
+
+  - View: pantallas Compose (CardListScreen, CardDetailScreen) que observan el estado del ViewModel.
+
+
+
+Lazy Components
+
+La lista se muestra con LazyColumn, que solo renderiza los elementos visibles, mejorando el rendimiento.
+
+Cada ítem es clicable y navega a la pantalla de detalle correspondiente.
+
